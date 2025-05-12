@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microstrip Patch Antenna Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Microstrip Patch Antenna Calculator</h2>
+        
+        <label for="er">Dielectric Constant (εr):</label>
+        <input type="number" id="er" placeholder="Enter εr" step="0.01">
+
+        <label for="f0">Operating Frequency (GHz):</label>
+        <input type="number" id="f0" placeholder="Enter Frequency" step="0.01">
+
+        <label for="h">Dielectric Thickness (mm):</label>
+        <input type="number" id="h" placeholder="Enter Thickness" step="0.01">
+
+        <button onclick="calculatePatch()">Calculate</button>
+
+        <h3>Results</h3>
+        <p>Width (W): <span id="width">-</span> mm</p>
+        <p>Length (L): <span id="length">-</span> mm</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
